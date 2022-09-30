@@ -1,0 +1,20 @@
+<HTML>
+    <HEAD>
+    <TITLE>Скрипник ПІ 19-01</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+        <script>
+       let one = prompt("Введіть перше число:");
+        let two = prompt("Введіть друге число:");
+
+        if (isNaN(one) || isNaN(two)) {
+            alert("Не числа");
+        } else {
+            one == two
+                ? alert("Числа однакові")
+                : alert("Більшим є число " + Math.max(one, two));
+        }
+
+    </script>
+    </BODY>
+    </HTML>

@@ -1,0 +1,22 @@
+<HTML>
+    <HEAD>
+    <TITLE>Скрипник ПІ 19-01</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+        <script>
+        let count;
+        while (true) {
+            count = +prompt("Введіть кількість студентів");
+            if (Number.isInteger(count) == false || count <= 0) continue;
+            else break;
+        }
+        let i = 0;
+        while (i < count) {
+            let dataStudent = prompt("Введіть ім'я і прізвище студента");
+            if (!dataStudent) break;
+            document.write(dataStudent + "<br>");
+            i++;
+        }
+    </script>
+    </BODY>
+    </HTML>

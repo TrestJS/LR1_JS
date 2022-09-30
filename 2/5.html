@@ -1,0 +1,17 @@
+<HTML>
+    <HEAD>
+    <TITLE>Скрипник ПІ 19-01</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+        <h1 href="#" id="doc">Наведіть мишку на текст</h1>
+        <script>
+      const doc = document.getElementById("doc");
+      doc.addEventListener("mouseover", (event) => {
+        const docc = prompt("Text");
+    if (docc) {
+        alert(docc);
+    }
+});
+    </script>
+    </BODY>
+    </HTML>

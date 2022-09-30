@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+    <TITLE>Скрипник ПІ 19-01</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+        <script>
+        let NumberSeason = prompt("Введіть номер місяця:");
+
+if (
+    isNaN(NumberSeason) ||
+    NumberSeason <= 0 ||
+    NumberSeason > 12
+) {
+    alert("Число має бути в межах від 1 до 12");
+} else {
+    if (
+        (NumberSeason > 0 && NumberSeason < 3) ||
+        NumberSeason == 12
+    )
+        alert("Зима");
+
+    if (NumberSeason > 2 && NumberSeason < 6) alert("Весна");
+
+    if (NumberSeason > 5 && NumberSeason < 9) alert("Літо");
+    if (NumberSeason > 9 && NumberSeason < 12) alert("Осінь");
+}
+    </script>
+    </BODY>
+    </HTML>
